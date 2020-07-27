@@ -7,9 +7,11 @@ class App < Sinatra::Base
   end
   get '/square/:number' do 
     num = params[:number].to_i 
-    output = num * num 
-    output 
+    output = num ** 2  
+    output.to_s 
   end
+  get '/say/:number/:phrase' do 
+    params[:phrase].
   
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
