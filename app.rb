@@ -33,7 +33,7 @@ class App < Sinatra::Base
     elsif op == "divide"
       (num1 / num2).to_s 
     else 
-      "Incorrect input"
+      "Unable to perform this operation"
     end
   end
       
